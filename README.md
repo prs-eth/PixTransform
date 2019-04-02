@@ -31,5 +31,5 @@ To run the algorithm on some sample images check the Jupyter Notebook file `proc
 
 ###### References
 
-[1] R. De Lutio, S. D'Aronco, J. D. Wegner, K. Schindler, "Guided Super-Resolution as a Learned Pixel-to-Pixel
+[1] R. de Lutio, S. D'Aronco, J. D. Wegner, K. Schindler, "Guided Super-Resolution as a Learned Pixel-to-Pixel
 Transformation", *arXiv*, 2019.
