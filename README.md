@@ -1,6 +1,6 @@
 # PixTransform
 
-PyTorch implementation of the algorithm presented in our [paper](https://arxiv.org/abs/1904.01501) [1]. The algorithm can be used to perform guided super-resolution, for instance:
+PyTorch implementation of the algorithm presented in our [paper [1]](https://arxiv.org/abs/1904.01501). The algorithm can be used to perform guided super-resolution, for instance:
 
 <img align="center" width="400px" src="imgs/Frontpage.png">
 
@@ -10,7 +10,7 @@ N x N. The upsampling factor D, equal to N/M, must be an integer.
     
     predicted_target = PixTransform(source,guide)
     
-additional variables can be passed to change the default parameters. For further details about the algorithm see [1]
+additional variables can be passed to change the default parameters. For further details about the algorithm see [[1]](https://arxiv.org/abs/1904.01501)
 
 
 ### Getting started
@@ -25,7 +25,7 @@ clone this git repository and make sure that the following packages are installe
 * tqdm
 
 ##### Example script
-To run the algorithm on some sample images check the Jupyter Notebook file `process_examples.ipynb`.
+To run the algorithm on some sample images check the Jupyter Notebook file [`process_examples.ipynb`](./process_examples.ipynb).
 
 
 
