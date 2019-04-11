@@ -27,9 +27,20 @@ clone this git repository and make sure that the following packages are installe
 ##### Example script
 To run the algorithm on some sample images check the Jupyter Notebook file [`process_examples.ipynb`](./process_examples.ipynb).
 
+##### Comparing to other methods
+
+We compare the results of our algorithm with the results of the guided filter [2], the fast bilateral solver [3] [(authors' implementation)](https://github.com/poolio/bilateral_solver), the static-dynamic filter [4] [(authors' implementation)](https://github.com/bsham/SDFilter) and the multi-scale guided network [5] [(authors' implementation)](https://github.com/twhui/MSG-Net).
 
 
 ###### References
 
-[[1] R. de Lutio, S. D'Aronco, J. D. Wegner, K. Schindler, "Guided Super-Resolution as a Learned Pixel-to-Pixel
+[[1] R. de Lutio, S. D'Aronco, J. D. Wegner, K. Schindler. "Guided Super-Resolution as a Learned Pixel-to-Pixel
 Transformation", *arXiv*, 2019.](https://arxiv.org/abs/1904.01501)
+
+[2] K. He, J. Sun, X. Tang. "Guided image filtering", *TPAMI*, 2013.
+
+[3] J. T. Barron, B. Poole. "The fast bilateral solver", *ECCV*, 2016.
+
+[4]  B. Ham, M. Cho, J. Ponce. "Robust guided image filtering using nonconvex potentials", *TPAMI*, 2018.
+
+[5] T.-W. Hui, C. C. Loy, X. Tang. "Depth map super-resolution by deep multi-scale guidance", *ECCV*, 2016.
