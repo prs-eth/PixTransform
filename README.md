@@ -1,6 +1,6 @@
 # PixTransform
 
-PyTorch implementation of the algorithm presented in [1]. The algorithm can be used to perform guided super-resolution, for instance:
+PyTorch implementation of the algorithm presented in our [paper](https://arxiv.org/abs/1904.01501) [1]. The algorithm can be used to perform guided super-resolution, for instance:
 
 <img align="center" width="400px" src="imgs/Frontpage.png">
 
@@ -31,5 +31,5 @@ To run the algorithm on some sample images check the Jupyter Notebook file `proc
 
 ###### References
 
-[1] R. de Lutio, S. D'Aronco, J. D. Wegner, K. Schindler, "Guided Super-Resolution as a Learned Pixel-to-Pixel
-Transformation", *arXiv*, 2019.
+[[1] R. de Lutio, S. D'Aronco, J. D. Wegner, K. Schindler, "Guided Super-Resolution as a Learned Pixel-to-Pixel
+Transformation", *arXiv*, 2019.](https://arxiv.org/abs/1904.01501)
