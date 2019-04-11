@@ -27,7 +27,7 @@ clone this git repository and make sure that the following packages are installe
 ##### Example script
 To run the algorithm on some sample images check the Jupyter Notebook file [`process_examples.ipynb`](./process_examples.ipynb).
 
-##### Other methods
+#### Other methods
 
 We compare the results of our algorithm with the results of the guided filter [2], the fast bilateral solver [3] [(authors' implementation)](https://github.com/poolio/bilateral_solver), the static-dynamic filter [4] [(authors' implementation)](https://github.com/bsham/SDFilter) and the multi-scale guided network [5] [(authors' implementation)](https://github.com/twhui/MSG-Net).
 
