@@ -2,14 +2,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_result(guide_img, input_img_nearest, output_img, label_img=None, data_type="rgb", fig_size=(16, 4)):
+def plot_result(guide_img, input_img_nearest, output_img, bicubic_img, label_img=None, data_type="rgb", fig_size=(16, 4)):
     cmap = "Spectral"
 
     if len(guide_img.shape) > 2:
 
         guide_img = np.rollaxis(guide_img, 0, 3)
 
-        if "sat" in data_type:
+        if data_type == "sat":
             guide_img = (guide_img[:, :, [2, 1, 0]])
 
         elif data_type == "rgb":
@@ -27,7 +27,7 @@ def plot_result(guide_img, input_img_nearest, output_img, label_img=None, data_t
         vmin = np.min(label_img)
         vmax = np.max(label_img)
 
-        f, axarr = plt.subplots(1, 4, figsize=fig_size)
+        f, axarr = plt.subplots(1, 5, figsize=fig_size)
 
         if len(guide_img.shape) > 2:
             axarr[0].imshow(guide_img)
@@ -40,13 +40,15 @@ def plot_result(guide_img, input_img_nearest, output_img, label_img=None, data_t
 
         axarr[3].imshow(output_img, vmin=vmin, vmax=vmax, cmap=cmap)
 
+        axarr[4].imshow(bicubic_img, vmin=vmin, vmax=vmax, cmap=cmap)
+
         titles = ['Guide', 'Source', 'Target',
-                  'Predicted Target (MSE {:.3f})'.format(np.mean((label_img - output_img) ** 2))]
+                  'Predicted Target (MSE {:.3f})'.format(np.mean((label_img - output_img) ** 2)), 'Bicubic (MSE {:.3f})'.format(np.mean((label_img - bicubic_img) ** 2))]
     else:
         vmin = np.min(input_img_nearest)
         vmax = np.max(input_img_nearest)
 
-        f, axarr = plt.subplots(1, 3, figsize=fig_size)
+        f, axarr = plt.subplots(1, 4, figsize=fig_size)
         if len(guide_img.shape) > 2:
             axarr[0].imshow(guide_img)
         else:
@@ -56,7 +58,9 @@ def plot_result(guide_img, input_img_nearest, output_img, label_img=None, data_t
 
         axarr[2].imshow(output_img, vmin=vmin, vmax=vmax, cmap=cmap)
 
-        titles = ['Guide', 'Source', 'Predicted Target']
+        axarr[3].imshow(bicubic_img, vmin=vmin, vmax=vmax, cmap=cmap)
+
+        titles = ['Guide', 'Source', 'Predicted Target', 'Bicubic (MSE {:.3f})'.format(np.mean((label_img - bicubic_img) ** 2))]
 
     for i, ax in enumerate(axarr):
         ax.set_axis_off()
