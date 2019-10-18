@@ -34,8 +34,8 @@ We compare the results of our algorithm with the results of the guided filter [2
 
 ###### References
 
-[[1] R. de Lutio, S. D'Aronco, J. D. Wegner, K. Schindler. "Guided Super-Resolution as a Learned Pixel-to-Pixel
-Transformation", *arXiv*, 2019.](https://arxiv.org/abs/1904.01501)
+[[1] R. de Lutio, S. D'Aronco, J. D. Wegner, K. Schindler. "Guided Super-Resolution as Pixel-to-Pixel
+Transformation", *ICCV*, 2019.](https://arxiv.org/abs/1904.01501)
 
 [2] K. He, J. Sun, X. Tang. "Guided image filtering", *TPAMI*, 2013.
 
