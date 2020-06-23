@@ -4,6 +4,9 @@ PyTorch implementation of the algorithm presented in our [paper [1]](https://arx
 
 <img align="center" width="400px" src="imgs/Frontpage.png">
 
+
+Have a look at our [blog post](https://medium.com/ecovisioneth/guided-super-resolution-as-pixel-to-pixel-transformation-dad13dfc76cb) or [publication](https://arxiv.org/abs/1904.01501) if you want to learn more about the method. 
+
 The function `PixTransform` takes as input two images, the source image of size M x M
 and a guide image of size C x N x N, and returns an upsampled version of the source image with size
 N x N. The upsampling factor D, equal to N/M, must be an integer.
